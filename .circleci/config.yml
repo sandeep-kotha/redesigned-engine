@@ -4,6 +4,12 @@ version: 2.1
 orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
+workflows:
+  version: 2
+  build_test:
+    jobs:
+      - deploy  
+    
 jobs:
   deploy:
     docker:
