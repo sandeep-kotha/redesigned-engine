@@ -23,4 +23,5 @@ CC="$1"
 K8S_CLUSTER="$2"
 [[ "${CC}" == "uk" ]] && ENV="dev" || ENV="usdev"
 
+printenv
 echo "env: ${CC} k8s: ${K8S_CLUSTER} ENV: ${ENV}"
